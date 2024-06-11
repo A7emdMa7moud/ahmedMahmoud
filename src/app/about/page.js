@@ -2,7 +2,7 @@ export default function About() {
   return (
     <div className="about min-h-[100%] relative pt-[8rem]">
       <div className="absolute top-[3rem] left-0 w-[5rem]">
-        <h1 className="section min-w-[30rem] text-textLight uppercase font-mono text-3xl mb-[2rem]">
+        <h1 className="section w-[80dvw] text-textLight uppercase font-mono text-3xl mb-[2rem]">
           about me
         </h1>
       </div>

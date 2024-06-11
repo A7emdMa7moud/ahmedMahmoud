@@ -1,18 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 html::-webkit-scrollbar {
   display: none;
 }
-
 #listItem {
   a {
     padding: 0.25rem 0;
     transition: 0.3s ease;
     position: relative;
     padding-left: 1.5rem;
-
     &::after {
       transition: 0.3s ease;
       position: absolute;
@@ -31,9 +28,6 @@ html::-webkit-scrollbar {
         background: #64ffda;
         width: 2rem;
       }
-      #listItem a {
-        color: red;
-      }
     }
     &.active {
       padding-left: 3.5rem;
@@ -45,7 +39,6 @@ html::-webkit-scrollbar {
     }
   }
 }
-
 .section {
   padding-left: 3rem;
   position: relative;
@@ -60,7 +53,6 @@ html::-webkit-scrollbar {
     background: #ccd6f6;
   }
 }
-
 .homeStyle {
   position: absolute;
   content: "";
@@ -69,4 +61,32 @@ html::-webkit-scrollbar {
   border: 2px dashed #233554;
   border-radius: 0.5rem;
   transform: rotate(10deg);
+}
+@media not all and (min-width: 1024px) {
+  #listItem {
+    a {
+      padding-left: 0;
+      &::after {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 20%;
+        top: 1.75rem;
+      }
+      &.active {
+        padding-left: 0;
+        color: #64ffda;
+        &::after {
+          background: #64ffda;
+          width: 20%;
+        }
+      }
+      &:hover {
+        padding-left: 0;
+        &::after {
+          background: #64ffda;
+          width: 100%;
+        }
+      }
+    }
+  }
 }
