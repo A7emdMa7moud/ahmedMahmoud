@@ -9,12 +9,10 @@ import reactRedux from "../_icons/reactRedux.svg";
 import reactRouter from "../_icons/reactRouter.svg";
 import nodejs from "../_icons/nodejs.svg";
 import nextjs from "../_icons/nextjs.svg";
-// import github from "../_icons/github.svg";
-// import codepen from "../_icons/codepen.svg";
-import gmail from "../_icons/gmail.svg";
+import github from "../_icons/github.svg";
+import codepen from "../_icons/codepen.svg";
 import facebook from "../_icons/facebook.svg";
 import instagram from "../_icons/instagram.svg";
-import telegram from "../_icons/telegram.svg";
 import whatsapp from "../_icons/whatsapp.svg";
 
 export default function Navabr() {
@@ -45,6 +43,15 @@ export default function Navabr() {
           <br />
           using new features in web world.
         </p>
+      </div>
+      {/* github codepen */}
+      <div className="flex flex-col backdrop-blur rounded z-[10] gap-1 fixed bottom-[.5rem] right-[.5rem]">
+        <Link target="blank" href={"https://codepen.io/A7MD-Mahmoud"}>
+          <Image width={20} alt="codepen" src={codepen} />
+        </Link>
+        <Link target="blank" href={"https://github.com/A7emdMa7moud"}>
+          <Image width={20} alt="github" src={github} />
+        </Link>
       </div>
       {/* skils */}
       <div>
@@ -111,7 +118,7 @@ export default function Navabr() {
       </div>
       {/* nav links */}
       <div
-        className="flex z-[10] uppercase font-mono tracking-wider justify-center px-2 border-b border-line fixed top-0 left-0 pb-[1rem]  pt-[1rem] w-dvw backdrop-blur-sm flex-row gap-5 lg:gap-0 lg:p-0 lg:border-0 lg:pb-0 lg:w-full lg:flex-col lg:static"
+        className="flex z-[10] uppercase font-mono tracking-wider justify-center px-2 border-b border-line fixed top-0 left-0 pb-[1rem]  pt-[1rem] w-dvw backdrop-blur-sm lg:backdrop-blur-none flex-row gap-5 lg:gap-0 lg:p-0 lg:border-0 lg:pb-0 lg:w-full lg:flex-col lg:static"
         id="listItem"
       >
         <Link href={"/"} className="active">
@@ -123,15 +130,32 @@ export default function Navabr() {
       </div>
       {/* social links */}
       <div>
-        <p className=" mb-1 font-mono text-primary font-bold tracking-widest">
+        <p className="mb-1 font-mono text-primary font-bold tracking-widest">
           Social
         </p>
         <ul className="flex border-l-2 mb-3 pl-2 flex-row gap-2 border-line  *:capitalize *:font-mono *:text-textLight *:font-bold *:traking-wider">
-          <Image width={17.5} alt="api" src={facebook} />
-          <Image width={17.5} alt="api" src={instagram} />
-          <Image width={17.5} alt="api" src={telegram} />
-          <Image width={17.5} alt="api" src={whatsapp} />
-          <Image width={17.5} alt="api" src={gmail} />
+          <Link
+            target="_blank"
+            href={
+              "https://api.whatsapp.com/send/?phone=01147823132&text&type=phone_number&app_absent=0"
+            }
+          >
+            <Image width={17.5} alt="api" src={whatsapp} />
+          </Link>{" "}
+          <Link
+            target="_blank"
+            href={"https://www.facebook.com/A7mdMa7mwd?mibextid=ZbWKwL"}
+          >
+            <Image width={17.5} alt="api" src={facebook} />
+          </Link>{" "}
+          <Link
+            target="_blank"
+            href={
+              "https://www.instagram.com/a7mdma7mwd?igsh=MTE5ZWJhb3p2M2t3cg%3D%3D"
+            }
+          >
+            <Image width={17.5} alt="api" src={instagram} />
+          </Link>
         </ul>
       </div>
     </div>
