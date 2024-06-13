@@ -145,7 +145,6 @@ export default function Navabr() {
             url={"https://getbootstrap.com"}
             icon={<Image width={20} alt="bootstrap" src={bootstrap} />}
           />
-          bootstarp
         </div>
       </div>
       {/* nav links */}
@@ -184,7 +183,7 @@ export default function Navabr() {
             <Link
               target="_blank"
               href={
-                "https://api.whatsapp.com/send/?phone=01147823132&text&type=phone_number&app_absent=0"
+                "https://api.whatsapp.com/send/?phone=1147823132&text&type=phone_number&app_absent=0"
               }
             >
               <Image width={17.5} alt="api" src={whatsapp} />
@@ -203,4 +202,3 @@ export default function Navabr() {
     </div>
   );
 }
-// https://nextjs.org/
