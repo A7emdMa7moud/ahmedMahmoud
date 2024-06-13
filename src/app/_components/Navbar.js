@@ -180,12 +180,7 @@ export default function Navabr() {
             >
               <Image width={17.5} alt="api" src={instagram} />
             </Link>
-            <Link
-              target="_blank"
-              href={
-                "https://api.whatsapp.com/send/?phone=1147823132&text&type=phone_number&app_absent=0"
-              }
-            >
+            <Link target="_blank" href={"https://wa.me/201147823132"}>
               <Image width={17.5} alt="api" src={whatsapp} />
             </Link>{" "}
           </div>
