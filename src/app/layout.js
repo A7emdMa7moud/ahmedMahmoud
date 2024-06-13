@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
           <div className="lg:w-[40%] w-full">
             <Navabr />
           </div>
-          <div className="min-h-[90dvh] lg:w-[60%] flex items-center pt-[3rem] lg:pt-[0rem] border-line">
+          <div className="min-h-[90dvh] lg:w-[60%] flex items-center pt-[3rem] lg:pt-[0rem] lg:ml-[2rem] border-line">
             {children}
           </div>
         </div>

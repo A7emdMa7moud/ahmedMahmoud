@@ -90,3 +90,9 @@ html::-webkit-scrollbar {
     }
   }
 }
+.animateText {
+  p {
+    animation: scroll-text 5s linear infinite;
+    color: var(--bs-gray-500);
+  }
+}
