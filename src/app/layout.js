@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import Navabr from "./_components/Navbar";
 import "animate.css";
 import "./globals.css";
+import Document from "./_document";
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
@@ -37,6 +38,7 @@ export default function RootLayout({ children }) {
           crossorigin="anonymous"
         ></script>
         {/* google adsense */}
+        <Document />
       </head>
       <body className={`${inter.className}`}>
         <div className="container min-h-dvh p-[1rem] flex gap-[1rem] flex-col lg:flex-row">
