@@ -69,7 +69,7 @@ export default function Navabr() {
               Axios
             </Link>{" "}
             <Link href={"https://www.postman.com"} className=" text-text/60">
-              Postmen
+              Postman
             </Link>
           </li>
           <li>
